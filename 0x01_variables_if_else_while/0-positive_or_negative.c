@@ -14,11 +14,17 @@ int main(void)
 
 {
 
-int c;
+int n;
 
-for(c = 97; c <= 122; c++)
+srand(time(0));
 
-putchar(c);
+n = rand() - RAND_MAX/2
+if(n > 0)
+	printf("%i is positive", n);
+else if(n < 0)
+	printf("%i is negative", n);
+else
+	printf("%i is zero", n);
 
 return (0);
 
