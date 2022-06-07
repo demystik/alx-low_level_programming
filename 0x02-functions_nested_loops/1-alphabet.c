@@ -12,7 +12,6 @@ void print_alphabet(void)
 {
 int count;
 for(count = 'a'; count <= 'z'; count++)
-	_putchar(count);
+	putchar(count);
 
-return (0);
 }
