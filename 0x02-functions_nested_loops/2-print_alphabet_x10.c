@@ -13,13 +13,13 @@ void print_alphabet_x10(void)
 
 int time, count;
 
-for(time = 0; time <= 10; time++)
+for (time = 0; time <= 10; time++)
 {
-
-for(count = 97; count <= 122; count++)
+for (count = 97; count <= 122; count++)
+{
 putchar(count);
-
 }
 putchar('\n');
-
+}
+putchar('\n');
 }
