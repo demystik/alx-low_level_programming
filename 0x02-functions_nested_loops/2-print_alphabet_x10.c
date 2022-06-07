@@ -16,9 +16,10 @@ int time, count;
 for(time = 0; time <= 10; time++)
 {
 
-	for(count = 97; count <= 122; count++)
-	_putchar(count);
+for(count = 97; count <= 122; count++)
+putchar(count);
 
 }
+putchar('\n');
 
 }
