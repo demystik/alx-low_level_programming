@@ -21,5 +21,5 @@ putchar(count);
 }
 putchar('\n');
 }
-putchar('\n');
+
 }
