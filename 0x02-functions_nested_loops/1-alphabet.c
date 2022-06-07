@@ -14,8 +14,8 @@ int count;
 
 for (count = 'a'; count <= 'z'; count++)
 {
-putchar(count);
+_putchar(count);
 }
-putchar('\n');
+_putchar('\n');
 
 }
