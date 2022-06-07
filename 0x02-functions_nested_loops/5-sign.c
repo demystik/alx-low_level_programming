@@ -3,7 +3,6 @@
 
 /**
  * print_sign - This program prints sign of a number
- * 
  * @n: The value to check
  * Return: 1 if it is positive, 0 if its zero and -1 if its negative
  */
