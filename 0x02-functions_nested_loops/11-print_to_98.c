@@ -21,6 +21,7 @@ putchar(',');
 putchar(' ');
 }
 }
+}
 else
 {
 for (n =n; n >= 98; n--)
