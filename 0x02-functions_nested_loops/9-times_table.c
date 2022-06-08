@@ -19,9 +19,10 @@ for (nums = 0; nums <= 9; nums++)
 {
 printf("%2d", num * nums);
 if (nums != 9)
+{
 putchar(',');
-
-putchar('.');
+putchar(' ');
+}
 }
 putchar('\n');
 }
