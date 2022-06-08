@@ -21,7 +21,8 @@ printf("%d", num * nums);
 if (nums != 9)
 putchar(',');
 
-putchar('  ');
+putchar(' ');
+putchar(' ');
 }
 putchar('\n');
 }
