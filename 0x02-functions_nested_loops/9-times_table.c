@@ -17,11 +17,10 @@ for (num = 0; num <= 9; num++)
 {
 for (nums = 0; nums <= 9; nums++)
 {
-printf("%d", num * nums);
+printf("%2d", num * nums);
 if (nums != 9)
 putchar(',');
 
-putchar(' ');
 putchar(' ');
 }
 putchar('\n');
