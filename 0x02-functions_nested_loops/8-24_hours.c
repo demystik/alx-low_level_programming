@@ -12,20 +12,20 @@ void jack_bauer(void)
 {
 int hour, min;
 
-for(hour = 00; hour < 24; hour++)
+for (hour = 00; hour < 24; hour++)
 {
-for(min = 00; min < 60; min++)
+for (min = 00; min < 60; min++)
 {
-if(hour < 10)
-  printf("0%d:", hour);
+if (hour < 10)
+printf("0%d:", hour);
 else
-  printf("%d:", hour);
+printf("%d:", hour);
 
 
-if(min < 10)
-  printf("0%d\n", min);
+if (min < 10)
+printf("0%d\n", min);
 else
-  printf("%d\n", min);
+printf("%d\n", min);
 }
 
 }
