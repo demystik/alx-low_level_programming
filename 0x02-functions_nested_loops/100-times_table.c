@@ -19,11 +19,17 @@ for (num = 0; num <= n; num++)
 {
 for (nums = 0; nums <= n; nums++)
 {
-printf("%3d", num * nums);
 if (nums != n)
 {
+printf("%3d", num * nums);
 printf(", ");
 }
+else
+{
+printf("%d", num * nums);
+
+}
+
 }
 printf("\n");
 }
