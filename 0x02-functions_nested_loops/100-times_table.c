@@ -11,25 +11,44 @@
 
 void print_times_table(int n)
 {
-int num, nums;
+int i, j, res;
 
-if (!(n > 15) && !(n < 0))
+if (!(n > 15 || n < 0))
 {
-for (num = 0; num <= n; num++)
+for (i = 0; i <= n; i++)
 {
-for (nums = 0; nums <= n; nums++)
+for (j = 0; j <= n; j++)
 {
-if (nums != n)
+res = (i * j);
+
+if (j != 0)
 {
-printf("%3d", num * nums);
-printf(", ");
+putchar(',');
+putchar(' ');
+}
+
+if (res < 10 && j != 0)
+{
+putchar(' ');
+putchar(' ');
+putchar((res % 10) + '0');
+}
+else if (res >= 10 && res < 100)
+{
+putchar(' ');
+putchar((res / 10) + '0');
+putchar((res % 10) + '0');
+}
+else if (res >= 100 && j != 0)
+{
+putchar((res / 100) = + '0');
+putchar((res / 10) % 10 + '0');
+putchar((res % 10) + '0');
 }
 else
 {
-printf("%d", num * nums);
-
+putchar((res % 10) + '0');
 }
-
 }
 printf("\n");
 }
