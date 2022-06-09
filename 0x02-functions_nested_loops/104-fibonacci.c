@@ -9,11 +9,15 @@
 
 int main(void)
 {
-int num1, num2;
+int num1;
+
+int num2;
 
 num1 = 0;
 num2 = 1;
+
 int result;
+
 int count = 1;
 
 while (count <= 98)
