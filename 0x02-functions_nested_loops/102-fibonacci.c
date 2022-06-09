@@ -9,11 +9,11 @@
 
 int main(void)
 {
-int num1;
+unsigned int num1;
 
-int num2;
+unsigned int num2;
 
-int res;
+unsigned int res;
 
 int count;
 
@@ -28,7 +28,7 @@ res = num1 + num2;
 num1 = num2;
 num2 = res;
 
-printf("%d, ", res);
+printf("%u, ", res);
 count++;
 }
 
