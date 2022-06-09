@@ -16,17 +16,19 @@ int num2;
 num1 = 0;
 num2 = 1;
 
-int result;
+int count;
 
-int count = 1;
+int res;
+
+count = 1;
 
 while (count <= 98)
 {
-result = num1 + num2;
+res = num1 + num2;
 num1 = num2;
-num2 = result;
+num2 = res;
 
-printf("%d, ", result);
+printf("%d, ", res);
 count++;
 }
 putchar('\n');
