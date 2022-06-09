@@ -13,7 +13,8 @@ int num1, num2;
 
 num1 = 0;
 num2 = 1;
-int result, count = 1;
+int result;
+int count = 1;
 
 while (count <= 50)
 {
@@ -24,4 +25,6 @@ num2 = result;
 printf("%d, ", result);
 count++;
 }
+
+return (0);
 }
