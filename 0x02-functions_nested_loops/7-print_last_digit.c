@@ -13,10 +13,16 @@ int print_last_digit(int num)
 
 int res;
 
+if (num < 0)
+	num = -num;
+
 res = num % 10;
+
 if (res < 0)
-return(-1 * res);
-else
+	res = -res;
+
+putchar(a + '0');
+
 return (res);
 
 }
