@@ -41,7 +41,7 @@ putchar((res % 10) + '0');
 }
 else if (res >= 100 && j != 0)
 {
-putchar((res / 100) = + '0');
+putchar((res / 100) + '0');
 putchar((res / 10) % 10 + '0');
 putchar((res % 10) + '0');
 }
