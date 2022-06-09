@@ -26,7 +26,7 @@ printf(", ");
 }
 else
 {
-printf("%2d", num * nums);
+printf("%d", num * nums);
 
 }
 
