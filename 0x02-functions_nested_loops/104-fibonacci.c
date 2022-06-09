@@ -9,13 +9,13 @@
 
 int main(void)
 {
-unsigned long long int num1;
+unsigned long int num1;
 
-unsigned long long int num2;
+unsigned long int num2;
 
 int count;
 
-unsigned long long int res;
+unsigned long int res;
 
 num1 = 0;
 num2 = 1;

@@ -9,11 +9,11 @@
 
 int main(void)
 {
-unsigned long long int num1;
+unsigned long int num1;
 
-unsigned long long int num2;
+unsigned long int num2;
 
-unsigned long long int res;
+unsigned long int res;
 
 int count;
 
