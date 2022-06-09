@@ -21,7 +21,7 @@ res = num % 10;
 if (res < 0)
 	res = -res;
 
-putchar(a + '0');
+putchar(res + '0');
 
 return (res);
 
