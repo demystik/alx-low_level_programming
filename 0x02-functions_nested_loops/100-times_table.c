@@ -20,7 +20,7 @@ for (num = 0; num <= n; num++)
 for (nums = 0; nums <= n; nums++)
 {
 printf("%3d", num * nums);
-if (nums != num)
+if (nums != n)
 {
 printf(", ");
 }
