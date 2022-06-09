@@ -35,6 +35,6 @@ printf(", ");
 }
 count++;
 }
-
+putchar('\n');
 return (0);
 }
