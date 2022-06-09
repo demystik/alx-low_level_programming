@@ -28,7 +28,11 @@ res = num1 + num2;
 num1 = num2;
 num2 = res;
 
-printf("%lu, ", res);
+printf("%lu", res);
+if (count != 50)
+{
+printf(", ");
+}
 count++;
 }
 
