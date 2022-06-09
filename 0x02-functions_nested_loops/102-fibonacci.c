@@ -13,14 +13,14 @@ int num1;
 
 int num2;
 
-num1 = 0;
-num2 = 1;
+int res;
 
 int count;
 
 count = 1;
 
-int res;
+num1 = 0;
+num2 = 1;
 
 while (count <= 50)
 {
