@@ -21,14 +21,14 @@ for ( m = 1; m <= n; m++)
 {
 for (j = 1; j < m; j++)
 {
-putchar(' ');
+_putchar(' ');
 }
 
-putchar('\\');
-putchar('\n');
+_putchar('\\');
+_putchar('\n');
 }
 
 
-putchar('\n');
+_putchar('\n');
 }
 }
