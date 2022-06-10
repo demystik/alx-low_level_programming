@@ -7,13 +7,13 @@
  * Return: void
  */
 
-int main()
+int main(void)
 {
 int n, m;
 
 for (n = 1; n <= 100; n++)
 {
-if(n % 3 == 0 && n % 5 == 0)
+if (n % 3 == 0 && n % 5 == 0)
 {
 printf("FizzBuzz ");
 }
@@ -27,10 +27,10 @@ printf("Buzz ");
 }
 else
 {
-
 printf("%i ",n);
 }
 }
 printf("\n");
+
 return 0;
 }
