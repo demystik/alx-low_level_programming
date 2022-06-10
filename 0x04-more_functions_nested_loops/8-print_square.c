@@ -9,20 +9,21 @@
 
 void print_square(int size)
 {
-int m,n;
-if (size <= 0)
+int col,row;
+
+if (size > 0)
 {
-_putchar('\n');
-}
-else
+for (row = 1; row <= size; row++)
 {
-for (n = 1; n < = size; n++)
-{
-for (m = 1; m <= size; m++)
+for (col = 1; col <= size; col++)
 {
 _putchar('#');
 }
 _putchar('\n');
 }
+}
+else
+{
+_putchar('\n');
 }
 }
