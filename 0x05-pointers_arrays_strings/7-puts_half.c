@@ -29,7 +29,8 @@ _putchar(var);
 
 else
 {
-n = (len - 1) / 2;
+len--;
+n = len / 2;
 for (count = n; *(str + count) != '\0'; count++)
 {
 var = *(str + count);

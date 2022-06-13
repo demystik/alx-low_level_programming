@@ -13,11 +13,11 @@ int count;
 
 for (count = 0; count < n; count++)
 {
-printf("%i",a[count]);
-if (count != (n-1))
+printf("%i", a[count]);
+if (count != (n - 1))
 {
 printf(", ");
 }
 }
-
+printf(" ");
 }
