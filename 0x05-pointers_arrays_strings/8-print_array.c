@@ -19,5 +19,5 @@ if (count != (n - 1))
 printf(", ");
 }
 }
-printf(" ");
+printf("\n");
 }
