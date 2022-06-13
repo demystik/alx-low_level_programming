@@ -6,25 +6,19 @@
  *
  * Return: nothing nothing
  */
+
 void puts2(char *str)
 {
-
-char c;
 int len;
+char l;
 
-len = 0;
-while (str[len] != '\0')
-	len++;
-len--;
-
-if (len % 2)
+for (len = 0; *(str + len) != 0; len++)
 {
-
-
-c = *(str + count);
-_putchar(c);
+if (len % 2 == 0)
+{
+l = *(str + len);
+_putchar(l);
 }
-
+}
 _putchar('\n');
-
 }

@@ -2,8 +2,8 @@
 
 /**
  * *_strcpy - This function copy string
- * @*dest: destination of the string
- * @*src: source of the string
+ * @dest: destination of the string
+ * @src: source of the string
  *
  * Return: char
  */

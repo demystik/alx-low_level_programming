@@ -2,7 +2,7 @@
 
 /**
  * swap_int - Sub-routine that swap the values of 2 integer values
- * @a: The first integer 
+ * @a: The first integer
  * @b: The second integer
  * Return: Always 0
  */

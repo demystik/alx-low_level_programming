@@ -18,7 +18,7 @@ for (len = 1; *(str + len) != '\0'; len++)
 
 if (len % 2 == 0)
 {
-n = len/2;
+n = len / 2;
 for (count = n; *(str + count) != '\0'; count++)
 {
 var = *(str + count);
