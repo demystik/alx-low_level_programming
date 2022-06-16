@@ -7,17 +7,18 @@
  * Return: no return
  */
 
+
 void reverse_array(int *a, int n)
 {
-n--;
+	int i, j, temp;
 
-while(n >= 0)
-{
-printf("%i", a[n]);
-if (n != 0)
-{
-printf(", ");
-}
-n--;
-}
+	for (i = 0; i < n - 1; i++)
+	{
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(a + j);
+			*(a + j) = *(a + (j - 1));
+			*(a + (j - 1)) = temp;
+		}
+	}
 }
