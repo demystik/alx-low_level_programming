@@ -3,7 +3,7 @@
 /**
  * string_toupper - This function convert strings to uppercase
  *
- * Description: This function conver
+ * @ptr: This function conver
  * Return: return char
  */
 
