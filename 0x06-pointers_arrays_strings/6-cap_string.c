@@ -3,7 +3,7 @@
 /**
  * cap_string - This function captalize all words of the string
  *
- * Description: This method captalize all words of the string
+ * @s: This method captalize all words of the string
  * Return: The char pointer should be return
  */
 
