@@ -1,49 +1,28 @@
 #include "main.h"
 
 /**
- * rot13 - this function encodes a string
- *
- * Description: this function encods a stings
- * return: char pointer
+ * rot13 - encodes a string using rot13
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
+char *rot13(char *s)
+{
+int count = 0, i;
+char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-char *rot13(char *ptr)
+while (*(s + count) != '\0')
 {
-	int i, len;
-	len = 99;
-	
-while(*(ptr + len) != '\0')
+for (i = 0; i < 52; i++)
 {
-	len++;
+if (*(s + count) == alphabet[i])
+{
+*(s + count) = rot13[i];
+break;
 }
-
-
-for (i = 0; i <= len; i++)
-{
-	if (*(ptr + len) >= 'a' && *(ptr + len) <= 'm')
-	{
-		*(ptr + len) += 13;
-		printf("%s\n", "first");
-	}
-
-	if (ptr[len] >= 'n' && ptr[len] <= 'z')
-	{
-		ptr[len] -= 13;
-	}
-
-	if (ptr[len] >= 'A' && ptr[len] <= 'M')
-	{
-		ptr[len] += 13;
-	}
-
-	if (ptr[len] >= 'N' && ptr[len] <= 'Z')
-	{
-		ptr[len] -= 13;
-	}
-
 }
-
-return (ptr);
-
+count++;
+}
+return (s);
 }
