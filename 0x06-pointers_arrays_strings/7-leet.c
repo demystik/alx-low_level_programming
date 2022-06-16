@@ -3,17 +3,19 @@
 /**
  * leet - This functions encode some chars
  *
- * Description: This function encodes some chars
+ * @ptr: This function encodes some chars
  * Return: char
  */
 
 char *leet(char *ptr)
 {
 int count, len;
+
 len = 0;
+
 while (*(ptr + len) != '\0')
 {
-	len++;
+len++;
 }
 for (count = 0; count <= len; count++)
 
@@ -37,6 +39,4 @@ if (*(ptr + count) == 'l' || *(ptr + count) == 'L')
 }
 
 return (ptr);
-
-
 }
