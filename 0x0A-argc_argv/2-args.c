@@ -9,9 +9,8 @@
 
 int main(int argc, char *argv[])
 {
-int i;
-for (i = 0; i < argc; i++)
-printf(" %d - %s\n", i, argv[i]);
-
+int count;
+for (count = 0; count < argc; count++)
+printf(" %d - %s\n", count, argv[count]);
 return (0);
 }
