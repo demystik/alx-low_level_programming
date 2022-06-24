@@ -3,7 +3,8 @@
 /**
  * main - This program prints its name
  *
- * Description: to print its name
+ * @argv: argument vector
+ * @argc: argument count
  * Return: nothing to return
  */
 
