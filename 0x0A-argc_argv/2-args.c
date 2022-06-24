@@ -10,16 +10,9 @@
 int main(int argc, char *argv[])
 {
 int i;
-
-i = 0;
-
-while (i != argc)
-{
-	printf("%s", argv[i]);
-	if (i != argc - 1)
-		printf("\n");
-	i++;
-}
+for (i = 0; i < argc; i++)
+printf(" %d - %s\n",i, argv[i]);
+return (0);
 
 return (0);
 }
