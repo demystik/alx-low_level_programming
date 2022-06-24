@@ -1,0 +1,1 @@
+This is my readme file for static and dynamics library projects
