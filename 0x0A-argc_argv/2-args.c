@@ -1,16 +1,14 @@
 #include <stdio.h>
-
 /**
- * main - Entry point for a program that prints all arguments it recieves
- * @argc: The argument count
- * @argv: The argument vector
- * Return: the lists of all args
- */
-
+* main - prints all arguments it receives.
+* @argc: argument count.
+* @argv: argument vector.
+* Return: 0 - success.
+*/
 int main(int argc, char *argv[])
 {
-int count;
-for (count = 0; count < argc; count++)
-printf(" %d - %s\n", count, argv[count]);
+int k;
+for (k = 0; k < argc; k++)
+printf(" %d - %s\n", k, argv[k]);
 return (0);
 }
