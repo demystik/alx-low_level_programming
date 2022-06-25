@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point of a program that multiply two args
@@ -17,11 +18,8 @@ if (argc != 3)
 	return (1);
 }
 else
-result = (argv[1] * argv[2]);
-printf("argv1 = %d and argv2 = %d\n", (**argv + 1), (**argv + 2));
+result = (atoi(argv[1]) * atoi(argv[2]));
 printf("%d\n", result);
-
-
 
 return (0);
 }
