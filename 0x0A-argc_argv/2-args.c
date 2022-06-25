@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
 * main - prints all arguments it receives.
-* @argc: argument count.
-* @argv: argument vector.
+* @argc: number of command line arguments.
+* @argv: array that contains the program command line arguments.
 * Return: 0 - success.
 */
 int main(int argc, char *argv[])
 {
-int k;
-for (k = 0; k < argc; k++)
-printf(" %d - %s\n", k, argv[k]);
+int i;
+for (i = 0; i < argc; i++)
+printf(" %d - %s\n", i, argv[i]);
 return (0);
 }
