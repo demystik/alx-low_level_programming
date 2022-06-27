@@ -33,10 +33,13 @@ char *str_concat(char *s1, char *s2)
 
 	buffer = malloc(sizeof(char) * size + 1);
 	if (buffer == NULL)
+	{
+		free(buffer);
 		return (NULL);
+	}
 	for (i = 0; i < size; i++)
 	{
-		if (s1[j1] != '\0')
+		if ((s1[j1] != '\0') && (s1 != NULL))
 		{
 			buffer[i] = s1[j1];
 			j1++;
