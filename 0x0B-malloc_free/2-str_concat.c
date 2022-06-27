@@ -29,10 +29,11 @@ char *str_concat(char *s1, char *s2)
 		while (s2[n2] != '\0')
 			n2++;
 	}
-
 	size = n1 + n2;
 
 	buffer = malloc(sizeof(char) * size + 1);
+	if (buffer == NULL)
+		return (NULL);
 	for (i = 0; i < size; i++)
 	{
 		if (s1[j1] != '\0')
