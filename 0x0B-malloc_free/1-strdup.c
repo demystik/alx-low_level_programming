@@ -21,6 +21,9 @@ char *_strdup(char *str)
 
 	buffer = malloc(sizeof(char) * size + 1);
 
+	if (buffer == NULL)
+		return (NULL);
+
 	if (sizeof(*buffer) != sizeof(*str))
 		return (NULL);
 
@@ -28,4 +31,3 @@ char *_strdup(char *str)
 		buffer[i] = str[i];
 return (buffer);
 }
-
