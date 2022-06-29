@@ -9,13 +9,14 @@
 
 char *str_concat(char *s1, char *s2)
 {
+
 	unsigned int n1, n2, j1, j2, i, size;
 	char *buffer;
 
-	n1 = n2 = j1 = j2 = 0;
+	n1 = n2 = j1 = j2 = size = 0;
 
 	if (s1 == NULL)
-		n1 = '\0';
+		s1 = '\0';
 	else
 	{
 		while (s1[n1] != '\0')
@@ -23,12 +24,13 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	if (s2 == NULL)
-		n2 = '\0';
+		s2 = '\0';
 	else
 	{
 		while (s2[n2] != '\0')
 			n2++;
 	}
+
 	size = n1 + n2;
 
 	buffer = malloc(sizeof(char) * size + 1);

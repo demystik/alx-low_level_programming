@@ -8,18 +8,18 @@
  */
 int power_operation(int n, int c)
 {
-	if (c % (n / c) == 0)
-	{
-		if (c * (n / c) == n)
-			return (c);
-		else
-			return (-1);
-	}
+	int sqrt;
+	sqrt = c * c;
+	
+	if (sqrt > n)
+		return (-1);
+	if (n == sqrt)
+		return (c);
 	return (0 + power_operation(n, c + 1));
 }
 
 
-/**
+/**:
  * _sqrt_recursion - This function returns the natural square root of a number
  * @n: The number
  *
