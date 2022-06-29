@@ -3,7 +3,7 @@
 
 # C - ALX low level programming & Algorithm
 
-In this section of the journey software engineering world, i have learned so far a lot of things among which are listed below.
+In this section of the journey to software engineering world, i have learned so far a lot of things among which are listed below.
 
 ## Low level programming :heavy_check_mark:
 
