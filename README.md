@@ -1,18 +1,22 @@
 -Hi
 
 
-# C - ALX low level programming
+# C - ALX low level programming & Algorithm
 
 In this section of the journey software engineering world, i have learned so far a lot of things among which are listed below.
 
 ## Low level programming :heavy_check_mark:
 
-`Variable`
+`How to print Hello, World in C`
+`Variable, if, else, while`
 `Data-types`
+`Functions, nested loops`
+`Debugging`
 `Pointers`
 `Arrays`
-`Function`
+`Strings`
 `Static library`
 `Recursion`
+`argc & argv`
 `Dynamic memory allocation`
 `and more to come..`
