@@ -10,7 +10,7 @@
  * Return: return pointer to the new allocate memory
  */
 
-int *_demystik(int *p, int *np, unsigned int old, unsigned int new)
+int *_demystik(int *p, int *np, unsigned int old)
 {
         unsigned int i;
 
@@ -59,12 +59,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	}
 
-	  if (new_size > old_size)
-        {
 		total = sizeof(int) * (old_size + new_size);
 		n_ptr = malloc(total);
-                _demystik(ptr, n_ptr, old_size, new_size);
+                _demystik(ptr, n_ptr, old_size);
                 return (n_ptr);
-        }
 return (n_ptr);
 }
