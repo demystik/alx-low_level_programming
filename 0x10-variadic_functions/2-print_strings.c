@@ -9,31 +9,29 @@
  *
  * Description: If separator is NULL, it is not printed.
  */
+
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list ptr;
-	unsigned int i;
-	char *s;
+	va_list strings;
+	char *str;
+	unsigned int index;
 
-	va_start(ptr, n);
+	va_start(strings, n);
 
-	for (i = 0; i < n; i++)
+	for (index = 0; index < n; index++)
 	{
-		s = va_arg(ptr, char*);
+		str = va_arg(strings, char *);
 
-		if (s == NULL)
+		if (str == NULL)
 			printf("(nil)");
 		else
-			printf("%s", s);
+			printf("%s", str);
 
-		if (i != (n - 1) && separator != NULL)
-		{
-			printf("%s ", separator);
-		}
+		if (index != (n - 1) && separator != NULL)
+			printf("%s", separator);
 	}
 
-printf("\n");
+	printf("\n");
 
-
-va_end(ptr);
+	va_end(strings);
 }
