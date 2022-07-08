@@ -1,9 +1,4 @@
-/*
- * File: 1-print_numbers.c
- * Auth: Thaoban
- */
-
-
+#include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
