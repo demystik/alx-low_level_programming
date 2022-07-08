@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
@@ -6,6 +5,7 @@
  * print_numbers - This function prints numbers follow by a new line
  * @separator: a string that separates ints
  * @n: number of int passed as an argument
+ * @...: other variables
  * Return: nothing to return
  */
 
