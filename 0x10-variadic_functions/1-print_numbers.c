@@ -1,3 +1,9 @@
+/*
+ * File: 1-print_numbers.c
+ * Auth: Thaoban
+ */
+
+
 #include <stdarg.h>
 #include "variadic_functions.h"
 
@@ -21,10 +27,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 
 		printf("%d", va_arg(ptr, int));
+
 		if (i != (n - 1) && separator != NULL)
 			printf("%s ", separator);
 	}
 
 printf("\n");
+
+
 va_end(ptr);
 }
