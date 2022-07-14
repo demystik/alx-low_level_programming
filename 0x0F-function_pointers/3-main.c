@@ -21,15 +21,16 @@ int main(int argc, char *argv[])
 
 	if (argv[2][1])
 	{
-		printf("Error\n");
+		printf("Errord\n");
 		exit(99);
 	}
+	
 
 	operation = get_op_func(argv[2]);
 
 	if (operation == NULL)
 	{
-		printf("Error\n");
+		printf("Errorer\n");
 		exit(99);
 	}
 
