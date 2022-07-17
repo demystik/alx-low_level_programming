@@ -6,12 +6,13 @@
  * add_node_end - This function append node at the end of list
  * @head: pointer the points to pointer to the list
  * @str: pointer to chars which is string data of the...
- * Return: address to the last new element or Null if it failed
+ * Return: address to the address of first node or Null if it failed
  */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new, *last;
+	size_t lenght;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
@@ -20,22 +21,26 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	last = *head;
 
 	new->str = strdup(str);
 
-	new->next = NULL;
+	for (lenght = 0; str[lenght]; lenght++)
+		;
 
-	if (*head == NULL)
+	new->len = lenght;
+	new->next = NULL;
+	last = *head;
+
+	if (last == NULL)
 	{
 		*head = new;
-		return (new);
+	}
+	else
+	{
+		while (last->next != NULL)
+			last = last->next;
+		last->next = new;
 	}
 
-	while (last->next != NULL)
-		last = last->next;
-
-	last->next = new;
-
-	return (new);
-}	
+	return (*head);
+}

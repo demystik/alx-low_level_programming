@@ -8,9 +8,9 @@
  * Return: The number of nodes
  */
 
-int print_list(const list_t *h)
+size_t print_list(const list_t *h)
 {
-	int i;
+	size_t i;
 
 	i = 0;
 
@@ -18,8 +18,7 @@ int print_list(const list_t *h)
 	{
 		if (h->str != NULL)
 		{
-			printf("[%d] ", h->len);
-			 printf("%s\n", h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		}
 		else
 			printf("[0] (nil)\n");
