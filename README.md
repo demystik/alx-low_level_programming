@@ -19,4 +19,7 @@ In this section of the journey to software engineering world, i have learned so 
 `Recursion`
 `argc & argv`
 `Dynamic memory allocation`
+`Structures`
+`Function pointers`
+`Variadic functions`
 `and more to come..`
