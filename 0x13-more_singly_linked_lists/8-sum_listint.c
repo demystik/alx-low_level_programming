@@ -9,21 +9,16 @@
 
 int sum_listint(listint_t *head)
 {
-	listint_t *tmp;
-	int sum;
 
+	int sum;
 
 	if (head == NULL)
 		return (0);
-	else
-	{
-		tmp = head;
 
-		while (tmp != NULL)
-		{
-			sum += tmp->n;
-			tmp = tmp->next;
-		}
+	while (head != NULL)
+	{
+		sum += head->n;
+		head = head->next;
 	}
 return (sum);
 }
