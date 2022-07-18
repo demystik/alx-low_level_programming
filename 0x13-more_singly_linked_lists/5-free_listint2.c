@@ -6,10 +6,10 @@
  *
  * Return: nothing to return
  */
-
 void free_listint2(listint_t **head)
 {
-	listint_t *node, *tmp;
+	listint_t *node;
+	listint_t *tmp;
 
 	if (*head != NULL)
 	{
