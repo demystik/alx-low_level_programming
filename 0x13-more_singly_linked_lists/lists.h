@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define size_t long unsigned int
 
 /**
  * struct listint_s - singly linked list
