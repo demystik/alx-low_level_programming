@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - function that adds a new node at the 
+ * add_dnodeint - function that adds a new node at the
  * beginning of a dlistint_t list
  * Author - Thaoban Abdrasheed
  * @head: Points to the head pointer
  * @n: New node value
  * Return address to the new node
- */ 
+ */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
@@ -20,18 +20,15 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (NULL);
 	tmp->prev = NULL;
 	tmp->n = n;
-	tmp->next = NULL;
-	if (h == NULL)
+	if (h != NULL)
 	{
-		*head = tmp;
-		return (*head);
+		while (h->prev != NULL)
+		h = h->prev;
 	}
-	else
-	{
-		tmp->next = h;
+	tmp->next = h;
+
+	if (h != NULL)
 		h->prev = tmp;
-		*head = tmp;
-		h = tmp;
-	}
+	*head = tmp;
 return (*head);
 }
