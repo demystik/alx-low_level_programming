@@ -5,7 +5,7 @@
  * of a dlistint_t linked list
  * @head: Pointer to the head node
  * Author - Thaoban Abdrasheed
- * return: the sum of all data (n)
+ * Return: the sum of all data (n)
  */
 int sum_dlistint(dlistint_t *head)
 {
@@ -14,18 +14,17 @@ int sum_dlistint(dlistint_t *head)
 
 	if (head == NULL)
 		return (0);
-	else
-	{
-		sum = 0;
-		tmp = head;
-		while (tmp->prev != NULL)
-			tmp = tmp->prev;
 
-		while (tmp != NULL)
-		{
-			sum += tmp->n;
-			tmp = tmp->next;
-		}
+	sum = 0;
+	tmp = head;
+	while (tmp->prev != NULL)
+		tmp = tmp->prev;
+
+	while (tmp != NULL)
+	{
+		sum += tmp->n;
+		tmp = tmp->next;
 	}
-return (sum);
+
+	return (sum);
 }
