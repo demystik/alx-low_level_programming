@@ -6,7 +6,7 @@
  * Author - Thaoban Abdrasheed
  * @head: Points to the head pointer
  * @n: New node value
- * Return address to the new node
+ * Return: address to the new node
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
