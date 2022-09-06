@@ -1,7 +1,7 @@
 # C - Dynamic libraries :page_with_curl:
 ### By: Julien Barbier - Holberton School
 
-###About-Me:wave:
+## About-Me:wave:
 ### I'm Thaoban Abdrasheed :boy: - A passionate software engineer form Nigeria
 In this project, I learned what dynamic libraries are and practiced them and using them with `nm`, `ldd`, `-fPIC`, `shared`.
 
