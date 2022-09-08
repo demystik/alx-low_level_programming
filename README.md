@@ -22,4 +22,8 @@ In this section of the journey to software engineering world, i have learned so 
 `Structures`
 `Function pointers`
 `Variadic functions`
+`Doubly linked list`
+`File I/O`
+`Bit manipulations`
+`Dynamic library`
 `and more to come..`
