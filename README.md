@@ -26,4 +26,5 @@ In this section of the journey to software engineering world, i have learned so 
 `File I/O`
 `Bit manipulations`
 `Dynamic library`
+`Stack & Queues`
 `and more to come..`
