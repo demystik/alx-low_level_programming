@@ -1,0 +1,3 @@
+blah: blah.c
+	gcc blah.c -o bl
+	./bl
