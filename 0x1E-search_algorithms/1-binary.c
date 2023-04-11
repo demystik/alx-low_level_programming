@@ -19,7 +19,7 @@ if (l > r)
 	return (-1);
 
 t = 0;
-while(ptr[i] <= ptr[r])
+while (ptr[i] <= ptr[r])
 {
 	if (t == 0)
 		printf("Searching in array: ");
