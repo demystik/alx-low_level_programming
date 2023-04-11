@@ -9,10 +9,11 @@
  * @value: value to search for
  * @l: left index
  * @r: right index
- * @j_step: jump step
+ * @size: size of the array
+ * @step: jump step
  * Return: the found index
  */
-int j_search(int *ptr, size_t size, int value, size_t l, size_t r, size_t j_step)
+int j_search(int *ptr, size_t size, int value, size_t l, size_t r, size_t step)
 {
 	printf("Value checked array[%d] = [%ld]\n", ptr[l], l);
 	/**
@@ -21,13 +22,9 @@ int j_search(int *ptr, size_t size, int value, size_t l, size_t r, size_t j_step
 	*/
 	if (ptr[r] < value && !(r > size))
 	{
-		/** Checking if value is not present
-		if (ptr[r] == ptr[size - 1])
-			return (-1);
-		*/
 		l = r;
 		r += j_step;
-		return (j_search(ptr, size, value, l, r, j_step));
+		return (j_search(ptr, size, value, l, r, step));
 	}
 	else
 	{
@@ -36,7 +33,7 @@ int j_search(int *ptr, size_t size, int value, size_t l, size_t r, size_t j_step
 		while (!(ptr[l] == value) && (l < size - 1))
 		{	printf("Value checked array[%d] = [%ld]\n", ptr[l], l);
 			l++;
-			if (ptr[l] == ptr[size -1])
+			if (ptr[l] == ptr[size - 1])
 				break;
 		}
 		printf("Value checked array[%d] = [%ld]\n", ptr[l], l);
@@ -53,6 +50,7 @@ return (-1);
  * @array: pointer to the first element of the array to search
  * @size: number of elements in array
  * @value: value to search for
+ * Return: index if found number
  */
 int jump_search(int *array, size_t size, int value)
 {
@@ -61,7 +59,7 @@ int jump_search(int *array, size_t size, int value)
 
 	l = array[0];
 	r = j_step;
-	
+
 	if (array == NULL)
 		return (-1);
 	index = j_search(array, size,  value, l, r, j_step);
