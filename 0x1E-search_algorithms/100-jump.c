@@ -21,7 +21,7 @@ int j_search(int *ptr, size_t size, int value, size_t l, size_t r, size_t step)
 	if (ptr[r] < value && !(r > size))
 	{
 		l = r;
-		r += j_step;
+		r += step;
 		return (j_search(ptr, size, value, l, r, step));
 	}
 	else
