@@ -14,7 +14,7 @@ size_t i = l;
 int t, mid = l + (r - l) / 2;
 
 
-if (l > r)
+if (l > r || ptr == NULL)
 	return (-1);
 
 t = 0;
@@ -53,6 +53,8 @@ int index;
 
 l = array[0];
 r = array[size - 1];
+if (size == 0)
+	return (-1);
 index = b_search(array, value, l, r);
 return (index);
 }
