@@ -1,5 +1,5 @@
 #include "search_algos.h"
-#include <stdlib.h>
+#include <math.h>
 
 /**
  * j_search - subJumpSearch function
@@ -40,8 +40,6 @@ int j_search(int *ptr, size_t size, int value, size_t l, size_t r, size_t step)
 	}
 return (-1);
 }
-
-
 
 /**
  * jump_search - searches for a value in a sorted array of int using JSA
