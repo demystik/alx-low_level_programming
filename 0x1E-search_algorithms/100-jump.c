@@ -1,7 +1,5 @@
-#include <stdio.h>
 #include "search_algos.h"
 #include <stdlib.h>
-#include <math.h>
 
 /**
  * j_search - subJumpSearch function
