@@ -17,7 +17,7 @@ index = 0;
 
 if (array == NULL)
 	return (-1);
-while (!(index == size))
+while (index < size)
 {
 	printf("value checked array[%ld] = [%d]\n", index, array[index]);
 	if (array[index] == value)
