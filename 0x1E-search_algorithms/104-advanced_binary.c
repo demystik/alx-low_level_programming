@@ -1,14 +1,14 @@
 #include "search_algos.h"
 
 /**
- * b_search - subbinary search function
+ * ab_search - subbinary search function
  * @ptr: pointer to the array
  * @value: value to search for
  * @l: left index
  * @r: right index
  * Return: return the index
  */
-int b_search(int *ptr, int value, size_t l, size_t r)
+int ab_search(int *ptr, int value, size_t l, size_t r)
 {
 size_t i = l;
 int t, mid = l + (r - l) / 2;
@@ -34,9 +34,9 @@ printf("\n");
 if (ptr[mid] == value)
 	return (ptr[mid]);
 else if (ptr[mid] > value)
-	return (b_search(ptr, value, l, mid - 1));
+	return (ab_search(ptr, value, l, mid - 1));
 else
-	return (b_search(ptr, value, mid + 1, r));
+	return (ab_search(ptr, value, mid + 1, r));
 }
 
 /**
@@ -47,7 +47,7 @@ else
  * Return: the index where the value is located
  */
 
-int advanced_binary(int *array, size_t size, int value);
+int advanced_binary(int *array, size_t size, int value)
 {
 size_t l, r;
 int index;
@@ -56,6 +56,6 @@ l = array[0];
 r = array[size - 1];
 if (size == 0)
 	return (-1);
-index = b_search(array, value, l, r);
+index = ab_search(array, value, l, r);
 return (index);
 }
