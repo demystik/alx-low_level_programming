@@ -4,7 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int advanced_binary(int *array, size_t size, int value);
+int j_search(int *ptr, size_t size, int value,
+	      size_t l, size_t r, size_t step);
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
+int jump_search(int *array, size_t size, int value);
+int b_search(int *ptr, int value, size_t l, size_t r);
 
-#endif /*SEACH_ALGOS*/
+#endif /* SEARCH_ALGOS_H */
